@@ -5,33 +5,34 @@ local c = require("fenbox.colors").config()
 
 return {
   normal = {
-    a = { bg = c.light_blue, fg = c.dark, gui = "bold" },
-    b = { bg = c.background, fg = c.light_blue },
-    c = { bg = c.background, fg = c.milk },
+    a = { fg = c.dark, bg = c.light_blue, gui = "bold" },
+    b = { fg = c.light_blue, bg = c.background },
+    c = { fg = c.milk, bg = c.background },
   },
   insert = {
-    a = { bg = c.bright_yellow, fg = c.dark, gui = "bold" },
-    b = { bg = c.background, fg = c.bright_yellow },
-    c = { bg = c.background, fg = c.milk },
+    a = { fg = c.dark, bg = c.soft_green, gui = "bold" },
+    b = { fg = c.bright_yellow, bg = c.background },
+    c = { fg = c.milk, bg = c.background },
   },
   visual = {
-    a = { bg = c.milk, fg = c.dark, gui = "bold" },
-    b = { bg = c.background, fg = c.milk },
-    c = { bg = c.background, fg = c.milk },
+    a = { fg = c.dark, bg = c.milk, gui = "bold" },
+    b = { fg = c.milk, bg = c.background },
+    c = { fg = c.milk, bg = c.background },
   },
   replace = {
-    a = { bg = c.error_red, fg = c.dark, gui = "bold" },
-    b = { bg = c.background, fg = c.error_red },
-    c = { bg = c.background, fg = c.milk },
+    a = { fg = c.dark, bg = c.error_red, gui = "bold" },
+    b = { fg = c.error_red, bg = c.background },
+    c = { fg = c.milk, bg = c.background },
   },
   command = {
-    a = { bg = c.soft_green, fg = c.dark, gui = "bold" },
-    b = { bg = c.background, fg = c.soft_green },
-    c = { bg = c.background, fg = c.milk },
+    a = { fg = c.dark, bg = c.soft_green, gui = "bold" },
+    b = { fg = c.soft_green, bg = c.background },
+    c = { fg = c.milk, bg = c.background },
   },
   inactive = {
-    a = { bg = c.dark_gray, fg = c.gray, gui = "bold" },
-    b = { bg = c.dark_gray, fg = c.gray },
-    c = { bg = c.dark_gray, fg = c.gray },
+    a = { fg = c.gray, bg = c.dark_gray, gui = "bold" },
+    b = { fg = c.gray, bg = c.dark_gray },
+    c = { fg = c.gray, bg = c.dark_gray },
   },
+}
 }
