@@ -193,6 +193,18 @@ function M.setup(config)
     ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     -- plugin Tressitter
 
+
+    -- Zsh
+    zshCommands ={fg = c.orange},
+    zshVariableDef = {theme.base["@lsp.type.variable"]},
+    zshCaseIn = theme.base.Keyword,
+    zshCaseWord =theme.base.String,
+    zshCase =theme.base.Keyword,
+    zshConditional =theme.base.Keyword,
+    zshFunction = theme.base.Function,
+    zshBrackets = {fg = c.orange},
+
+
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
     htmlEndTag = { fg = c.foreground },
@@ -238,7 +250,7 @@ function M.setup(config)
     phpInclude = { fg = c.magenta },
     phpClass = { fg = c.soft_yellow },
     phpClasses = { fg = c.soft_yellow },
-    phpFunction = { fg = c.blue_gray },
+    phpFunction = { fg = c.soft_green},
     phpType = { fg = c.magenta },
     phpKeyword = { fg = c.magenta },
     phpVarSelector = { fg = c.foreground },
@@ -439,6 +451,7 @@ function M.setup(config)
     DashboardShortCut = { fg = c.light_blue },
     DashboardCenter = { fg = c.bright_yellow },
     DashboardFooter = { fg = c.blue_gray },
+
 
     -- Bufferline
     -- BufferLineIndicatorSelected = { fg = c.git.change },
