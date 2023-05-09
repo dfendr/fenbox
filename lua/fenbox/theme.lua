@@ -25,7 +25,7 @@ function M.setup(config)
     Boolean = { fg = c.pink },
     Float = { fg = c.pink },
     Identifier = { fg = c.light_blue, style = config.variable_style },
-    Function = { fg = c.soft_green },
+    Function = { fg = c.soft_green, style = config.function_style },
     Statement = { fg = c.red },
     Conditional = { fg = c.foreground },
     Repeat = { fg = c.magenta },
@@ -69,10 +69,10 @@ function M.setup(config)
     LineNr = { fg = c.medium_gray },
     MatchParen = { bg = c.comment, style = "underline" },
     NonText = { fg = c.comment },
-    Pmenu = { fg = c.foreground, bg = c.medium_gray},
-    PmenuSel = { fg = c.background_light, bg = c.light_blue, style = "bold"},
-    PmenuSbar = { bg = c.background_light},
-    PmenuThumb = { bg = c.comment},
+    Pmenu = { fg = c.foreground, bg = c.medium_gray },
+    PmenuSel = { fg = c.background_light, bg = c.light_blue, style = "bold" },
+    PmenuSbar = { bg = c.background_light },
+    PmenuThumb = { bg = c.comment },
 
     -- Prev
     -- PmenuSel = { fg = c.background, bg = c.blue_gray },
@@ -193,17 +193,15 @@ function M.setup(config)
     ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     -- plugin Tressitter
 
-
     -- Zsh
-    zshCommands ={fg = c.orange},
-    zshVariableDef = {fg = c.light_blue},
-    zshCaseIn = theme.base.Keyword,
-    zshCaseWord =theme.base.String,
-    zshCase =theme.base.Keyword,
-    zshConditional =theme.base.Keyword,
-    zshFunction = theme.base.Function,
-    zshBrackets = {fg = c.orange},
-
+    zshCommands = { fg = c.orange },
+    zshVariableDef = { fg = c.light_blue },
+    zshCaseIn = { fg = c.red },
+    zshCaseWord = { fg = c.soft_green },
+    zshCase = { fg = c.red },
+    zshConditional = { fg = c.red },
+    zshFunction = { fg = c.soft_green, style = config.function_style },
+    zshBrackets = { fg = c.orange },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
@@ -250,7 +248,7 @@ function M.setup(config)
     phpInclude = { fg = c.magenta },
     phpClass = { fg = c.soft_yellow },
     phpClasses = { fg = c.soft_yellow },
-    phpFunction = { fg = c.soft_green},
+    phpFunction = { fg = c.soft_green },
     phpType = { fg = c.magenta },
     phpKeyword = { fg = c.magenta },
     phpVarSelector = { fg = c.foreground },
@@ -451,7 +449,6 @@ function M.setup(config)
     DashboardShortCut = { fg = c.light_blue },
     DashboardCenter = { fg = c.bright_yellow },
     DashboardFooter = { fg = c.blue_gray },
-
 
     -- Bufferline
     -- BufferLineIndicatorSelected = { fg = c.git.change },
