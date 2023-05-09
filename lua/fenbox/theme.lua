@@ -196,7 +196,7 @@ function M.setup(config)
 
     -- Zsh
     zshCommands ={fg = c.orange},
-    zshVariableDef = {theme.base["@lsp.type.variable"]},
+    zshVariableDef = {fg = c.light_blue},
     zshCaseIn = theme.base.Keyword,
     zshCaseWord =theme.base.String,
     zshCase =theme.base.Keyword,
