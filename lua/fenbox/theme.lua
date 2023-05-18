@@ -102,7 +102,7 @@ function M.setup(config)
     ["@error"] = { fg = c.red },
     ["@punctuation.delimiter"] = { fg = c.foreground },
     ["@punctuation.bracket"] = { fg = c.foreground },
-    ["@punctuation.special"] = { fg = c.neutral_yellow },
+    ["@punctuation.special"] = { fg = c.soft_yellow},
     ["@constant"] = { fg = c.pink, style = "bold" },
     ["@definition.constant"] = { fg = c.pink, style = "bold" },
     ["@constant.builtin"] = { fg = c.pink },
@@ -194,14 +194,15 @@ function M.setup(config)
     -- plugin Tressitter
 
     -- Zsh
-    zshCommands = { fg = c.orange },
-    zshVariableDef = { fg = c.light_blue },
-    zshCaseIn = { fg = c.red },
-    zshCaseWord = { fg = c.soft_green },
-    zshCase = { fg = c.red },
-    zshConditional = { fg = c.red },
-    zshFunction = { fg = c.soft_green, style = config.function_style },
-    zshBrackets = { fg = c.orange },
+    -- zshCommands = { fg = c.orange },
+    -- zshVariableDef = { fg = c.light_blue },
+    -- zshCaseIn = { fg = c.red },
+    -- zshCaseWord = { fg = c.soft_green },
+    -- zshCasePattern = { fg = c.red},
+    -- zshCase = { fg = c.red },
+    -- zshConditional = { fg = c.red },
+    -- zshFunction = { fg = c.soft_green, style = config.function_style },
+    -- zshBrackets = { fg = c.orange },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
