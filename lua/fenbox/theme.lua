@@ -373,7 +373,7 @@ function M.setup(config)
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
 
-    FloatBorder = { fg = c.light_blue, bg = c.background_dark },
+    FloatBorder = { fg = c.light_blue, bg = c.background},
     -- Cmp
     CmpDocumentation = { fg = c.foreground, bg = c.bg_float },
     CmpDocumentationBorder = { fg = c.medium_gray, bg = c.bg_float },
