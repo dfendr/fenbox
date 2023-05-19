@@ -102,7 +102,7 @@ function M.setup(config)
     ["@error"] = { fg = c.red },
     ["@punctuation.delimiter"] = { fg = c.foreground },
     ["@punctuation.bracket"] = { fg = c.foreground },
-    ["@punctuation.special"] = { fg = c.soft_yellow},
+    ["@punctuation.special"] = { fg = c.soft_yellow },
     ["@constant"] = { fg = c.pink, style = "bold" },
     ["@definition.constant"] = { fg = c.pink, style = "bold" },
     ["@constant.builtin"] = { fg = c.pink },
@@ -373,7 +373,7 @@ function M.setup(config)
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
 
-    FloatBorder = { bg = c.background_dark },
+    FloatBorder = { fg = c.light_blue, bg = c.background_dark },
     -- Cmp
     CmpDocumentation = { fg = c.foreground, bg = c.bg_float },
     CmpDocumentationBorder = { fg = c.medium_gray, bg = c.bg_float },
