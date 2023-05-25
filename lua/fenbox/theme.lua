@@ -346,9 +346,9 @@ function M.setup(config)
     ["@variable.cpp"] = { fg = c.light_blue },
 
     -- Nvim Tree
-    NvimTreeNormal = { fg = c.milk},
+    NvimTreeNormal = { fg = c.milk, bg = c.background_dark},
     NvimTreeOpenedFile = { fg = c.milk, style = "bold"},
-    NvimTreeNormalNC = { fg = c.milk},
+    NvimTreeNormalNC = { fg = c.milk, bg = c.background_dark},
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
     NvimTreeExecFile = { fg = c.forest_green, style = "bold" },
