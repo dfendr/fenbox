@@ -351,7 +351,7 @@ function M.setup(config)
     NvimTreeNormalNC = { fg = c.milk},
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
-    NvimTreeExecFile = { fg = c.faded_green, style = "bold" },
+    NvimTreeExecFile = { fg = c.forest_green, style = "bold" },
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
