@@ -347,7 +347,7 @@ function M.setup(config)
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.milk},
-    NvimTreeOpenedFile = { fg = c.bright_yellow},
+    NvimTreeOpenedFile = { fg = c.milk, style = "bold"},
     NvimTreeNormalNC = { fg = c.milk},
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
@@ -355,7 +355,7 @@ function M.setup(config)
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
-    NvimTreeGitDirty = { fg = c.neutral_yellow },
+    NvimTreeGitDirty = { fg = c.light_blue},
     NvimTreeGitStaged = { fg = c.foreground },
     NvimTreeGitMerge = { fg = c.soft_yellow },
     NvimTreeGitRenamed = { fg = c.soft_yellow },
