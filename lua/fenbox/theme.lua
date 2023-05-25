@@ -346,9 +346,9 @@ function M.setup(config)
     ["@variable.cpp"] = { fg = c.light_blue },
 
     -- Nvim Tree
-    NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },
-    NvimTreeOpenedFile = { fg = c.milk, style = "bold" },
-    NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark },
+    NvimTreeNormal = { fg = c.faded_green },
+    NvimTreeOpenedFile = { fg = c.milk },
+    NvimTreeNormalNC = { fg = c.foreground },
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
     NvimTreeExecFile = { fg = c.faded_green, style = "bold" },
@@ -373,7 +373,8 @@ function M.setup(config)
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
 
-    FloatBorder = { fg = c.light_blue, bg = c.background},
+    FloatBorder = { fg = c.light_blue, bg = c.background },
+
     -- Cmp
     CmpDocumentation = { fg = c.foreground, bg = c.bg_float },
     CmpDocumentationBorder = { fg = c.medium_gray, bg = c.bg_float },
