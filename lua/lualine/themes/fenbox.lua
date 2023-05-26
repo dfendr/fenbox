@@ -3,7 +3,7 @@ local funcs = require("fenbox.hsluv")
 
 local mode_color = {
   n = c.comment,
-  i = c.soft_green,
+  i = c.light_blue,
   v = c.pink,
   [""] = c.pink,
   V = c.pink,
