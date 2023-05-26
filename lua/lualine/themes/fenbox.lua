@@ -1,8 +1,5 @@
--- Copyright (c) 2020-2021 hoob3rt
--- MIT license, see LICENSE for more details.
--- stylua: ignore
 local c = require("fenbox.colors").config()
-local hsluv = require("fenbox.hsluv")
+local funcs = require("fenbox.hsluv")
 
 local mode_color = {
   n = c.comment,
@@ -28,76 +25,44 @@ local mode_color = {
   text = c.milk,
 }
 
-local background = c.background_dark
-
 return {
   normal = {
-    -- a = { fg = c.dark, bg = c.light_blue, gui = "bold" },
-    a = { fg = c.background, bg = c.comment, gui = "bold" },
-    -- b = { fg = c.light_blue, bg = c.background },
-    b = { fg = c.milk, bg = hsluv.fade_RGB(c.light_blue, background, 90) },
-    -- c = { fg = c.milk, bg = c.background },
+    a = { fg = c.background, bg = mode_color.n, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.n, c.background, 90) },
     c = {
-      fg = c.milk,--[[ bg = funcs.fade_RGB(n_color, background, 95) ]]
+      fg = mode_color.text, --[[ bg = funcs.fade_RGB(n_color, background, 95) ]]
     },
   },
-  -- insert = {
-  --   a = { fg = c.dark, bg = c.soft_green, gui = "bold" },
-  --   b = { fg = c.bright_yellow, bg = c.background },
-  --   c = { fg = c.milk, bg = c.background },
-  -- },
-  -- visual = {
-  --   a = { fg = c.dark, bg = c.milk, gui = "bold" },
-  --   b = { fg = c.milk, bg = c.background },
-  --   c = { fg = c.milk, bg = c.background },
-  -- },
-  -- replace = {
-  --   a = { fg = c.dark, bg = c.error_red, gui = "bold" },
-  --   b = { fg = c.error_red, bg = c.background },
-  --   c = { fg = c.milk, bg = c.background },
-  -- },
-  -- command = {
-  --   a = { fg = c.dark, bg = c.soft_green, gui = "bold" },
-  --   b = { fg = c.soft_green, bg = c.background },
-  --   c = { fg = c.milk, bg = c.background },
-  -- },
-  -- inactive = {
-  --   a = { fg = c.gray, bg = c.dark_gray, gui = "bold" },
-  --   b = { fg = c.gray, bg = c.dark_gray },
-  --   c = { fg = c.gray, bg = c.dark_gray },
-  -- },
-
   insert = {
-    a = { fg = c.background, bg = mode_color.i },
-    b = { fg = mode_color.text, bg = hsluv.fade_RGB(mode_color.i, background, 90) },
+    a = { fg = c.background, bg = mode_color.i, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.i, c.background, 90) },
     c = { fg = mode_color.text },
-  -- Fix CMP selectione menu highlights.
-},
+  },
   visual = {
-    a = { fg = c.background, bg = mode_color.v },
-    b = { fg = mode_color.text, bg = hsluv.fade_RGB(mode_color.v, background, 90) },
+    a = { fg = c.background, bg = mode_color.v, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.v, c.background, 90) },
     c = { fg = mode_color.text },
   },
 
   visual_block = {
-    a = { fg = c.background, bg = mode_color.v },
-    b = { fg = mode_color.text, bg = hsluv.fade_RGB(mode_color.v, background, 90) },
+    a = { fg = c.background, bg = mode_color.v, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.v, c.background, 90) },
     c = { fg = mode_color.text },
   },
   replace = {
-    a = { fg = c.background, bg = mode_color.r },
-    b = { fg = mode_color.text, bg = hsluv.fade_RGB(mode_color.r, background, 90) },
+    a = { fg = c.background, bg = mode_color.r, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.r, c.background, 90) },
     c = { fg = mode_color.text },
   },
 
   inactive = {
-    a = { fg = c.milk },
+    a = { fg = c.milk, bg = c.background },
     b = { fg = mode_color.text },
     c = { fg = mode_color.text },
   },
   command = {
-    a = { fg = c.background, bg = mode_color.c },
-    b = { fg = mode_color.text, bg = hsluv.fade_RGB(mode_color.c, background, 90) },
+    a = { fg = c.background, bg = mode_color.c, gui = "bold" },
+    b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.c, c.background, 90) },
     c = { fg = mode_color.text },
   },
 }

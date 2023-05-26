@@ -16,6 +16,7 @@ end
 
 config = {
   background_color = opt("background_color", "medium"),
+  lualine_style = opt("lualine_style", "bold"),
   comment_style = opt("comment_style", "italic"),
   keyword_style = opt("keyword_style", "italic"),
   function_style = opt("function_style", "bold"),
