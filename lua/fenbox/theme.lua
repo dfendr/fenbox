@@ -153,12 +153,13 @@ function M.setup(config)
     ["@tag.attribute"] = { fg = c.soft_yellow },
     --
     -- per language TreeSitter
+
+    --Python
     ["@variable.python"] = { fg = c.foreground, style = "NONE" },
+    ["@variable.builtin.python"] = { fg = c.blue_gray, style = "NONE" },
     ["@attribute.python"] = { fg = c.orange, style = "bold" },
     ["@decorator"] = { fg = c.orange, style = "bold" },
-    ["@variable.rust"] = { fg = c.light_blue, style = "NONE" },
     ["@conditional.javascript"] = { fg = c.red },
-    ["@variable.javascript"] = { fg = c.light_blue },
 
     -- Rust
     ["@storageclass.rust"] = { fg = c.red },
@@ -181,7 +182,7 @@ function M.setup(config)
     ["@lsp.type.interface"] = { fg = c.clean_green },
     ["@lsp.type.macro"] = { fg = c.orange },
     ["@lsp.type.method"] = { fg = c.soft_green },
-    ["@lsp.type.namespace"] = { fg = c.milk },
+    ["@lsp.type.namespace"] = { fg = c.foreground},
     ["@lsp.type.parameter"] = { fg = c.light_blue },
     ["@lsp.type.property"] = { fg = c.blue_gray },
     ["@lsp.type.struct"] = { fg = c.clean_green },
@@ -346,9 +347,9 @@ function M.setup(config)
     ["@variable.cpp"] = { fg = c.light_blue },
 
     -- Nvim Tree
-    NvimTreeNormal = { fg = c.milk, bg = c.background_dark},
-    NvimTreeOpenedFile = { fg = c.milk, style = "bold"},
-    NvimTreeNormalNC = { fg = c.milk, bg = c.background_dark},
+    NvimTreeNormal = { fg = c.foreground, bg = c.background_dark},
+    NvimTreeOpenedFile = { fg = c.foreground, style = "bold"},
+    NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark},
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
     NvimTreeExecFile = { fg = c.forest_green, style = "bold" },
@@ -365,7 +366,7 @@ function M.setup(config)
     -- Hop
     HopNextKey = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
     HopNextKey1 = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
-    HopNextKey2 = { fg = c.milk, bg = c.dark },
+    HopNextKey2 = { fg = c.foreground, bg = c.dark },
 
     -- indent blankline
     IndentBlanklineChar = { fg = "#414141" },
@@ -379,7 +380,7 @@ function M.setup(config)
     CmpDocumentation = { fg = c.foreground, bg = c.bg_float },
     CmpDocumentationBorder = { fg = c.medium_gray, bg = c.bg_float },
     CmpItemAbbr = { fg = c.foreground },
-    CmpItemAbbrDeprecated = { fg = c.milk, style = "strikethrough" },
+    CmpItemAbbrDeprecated = { fg = c.foreground, style = "strikethrough" },
     CmpItemAbbrMatch = { fg = c.light_blue, style = "bold" },
     CmpItemAbbrMatchFuzzy = { fg = c.light_blue },
 
@@ -405,8 +406,7 @@ function M.setup(config)
     CmpItemKindField = { fg = c.light_blue },
     CmpItemKindTypeParameter = { fg = c.soft_yellow },
     CmpItemKindEnumMember = { fg = c.magenta },
-    CmpItemKindOperator = { fg = c.milk },
-    CmpItemKindOperator = { fg = c.milk },
+    CmpItemKindOperator = { fg = c.foreground},
     CmpItemKindSnippet = { fg = c.gray },
 
     -- Mutt-Mail:
@@ -422,7 +422,7 @@ function M.setup(config)
     mailQuoted5 = { fg = c.soft_green },
     mailQuoted6 = { fg = c.orange },
 
-    mailQuotedExp1 = { fg = c.milk },
+    mailQuotedExp1 = { fg = c.foreground},
     mailQuotedExp2 = { fg = c.light_blue },
     mailQuotedExp3 = { fg = c.blue_gray },
     mailQuotedExp4 = { fg = c.pink },
@@ -460,17 +460,17 @@ function M.setup(config)
   if config.telescope_theme then
     theme.base = vim.tbl_extend("force", theme.base, {
       -- Telescope
-      TelescopeBorder = { fg = c.background_dark, bg = c.background_dark },
-      TelescopePromptCounter = { fg = c.milk, bg = c.medium_gray },
+      TelescopeBorder = { fg = c.background, bg = c.background_dark },
+      TelescopePromptCounter = { fg = c.foreground, bg = c.medium_gray },
       TelescopePromptBorder = { fg = c.medium_gray, bg = c.medium_gray },
-      TelescopePromptNormal = { fg = c.milk, bg = c.medium_gray },
+      TelescopePromptNormal = { fg = c.foreground, bg = c.medium_gray },
       TelescopePromptPrefix = { fg = c.soft_yellow, bg = c.medium_gray },
 
       TelescopeNormal = { bg = c.background_dark },
 
       TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
       TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
-      TelescopeResultsTitle = { fg = c.background_dark, bg = c.milk },
+      TelescopeResultsTitle = { fg = c.background_dark, bg = c.foreground},
 
       TelescopeSelection = { bg = c.diff.change },
     })
