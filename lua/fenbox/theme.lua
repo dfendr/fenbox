@@ -156,7 +156,6 @@ function M.setup(config)
 
     --Python
     ["@variable.python"] = { fg = c.foreground, style = "NONE" },
-    ["@variable.builtin.python"] = { fg = c.blue_gray, style = "NONE" },
     ["@attribute.python"] = { fg = c.orange, style = "bold" },
     ["@decorator"] = { fg = c.orange, style = "bold" },
     ["@conditional.javascript"] = { fg = c.red },
