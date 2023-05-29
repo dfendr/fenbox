@@ -174,36 +174,26 @@ function M.setup(config)
     ["@type.builtin.c_sharp"] = { fg = c.red },
     ["@storageclass.c_sharp"] = { fg = c.red },
 
-    ["@lsp.type.class"] = { fg = c.clean_green },
-    ["@lsp.type.decorator"] = { fg = c.orange },
-    ["@lsp.type.enum"] = { fg = c.clean_green },
-    ["@lsp.type.enumMember"] = { fg = c.clean_green },
+    -- General Semantic Highlights
+    ["@lsp.type.class"] = { fg = c.soft_yellow },
+    ["@lsp.type.decorator"] = { fg = c.orange, stlye = "bold" },
+    ["@lsp.type.enum"] = { fg = c.soft_yellow },
+    ["@lsp.type.enumMember"] = { fg = c.magenta },
     ["@lsp.type.function"] = { fg = c.soft_green, style = config.function_style },
-    ["@lsp.type.interface"] = { fg = c.clean_green },
-    ["@lsp.type.macro"] = { fg = c.orange },
-    ["@lsp.type.method"] = { fg = c.soft_green },
-    ["@lsp.type.namespace"] = { fg = c.foreground},
+    ["@lsp.type.interface"] = { fg = c.soft_yellow },
+    ["@lsp.type.macro"] = { fg = c.bright_yellow },
+    ["@lsp.type.method"] = { fg = c.soft_green, style = config.function_style },
+    ["@lsp.type.namespace"] = { fg = c.foreground },
     ["@lsp.type.parameter"] = { fg = c.light_blue },
     ["@lsp.type.property"] = { fg = c.blue_gray },
     ["@lsp.type.struct"] = { fg = c.clean_green },
     ["@lsp.type.type"] = { fg = c.soft_yellow },
-    ["@lsp.type.typeParameter"] = { fg = c.soft_yellow },
-    ["@lsp.type.variable"] = { fg = c.light_blue },
+    ["@lsp.type.typeParameter"] = { fg = c.light_blue },
+    ["@lsp.type.variable"] = { fg = c.light_blue, style = config.variable_style },
 
     -- Neorg
     ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     -- plugin Tressitter
-
-    -- Zsh
-    -- zshCommands = { fg = c.orange },
-    -- zshVariableDef = { fg = c.light_blue },
-    -- zshCaseIn = { fg = c.red },
-    -- zshCaseWord = { fg = c.soft_green },
-    -- zshCasePattern = { fg = c.red},
-    -- zshCase = { fg = c.red },
-    -- zshConditional = { fg = c.red },
-    -- zshFunction = { fg = c.soft_green, style = config.function_style },
-    -- zshBrackets = { fg = c.orange },
 
     htmlArg = { fg = c.soft_yellow },
     htmlBold = { fg = c.bright_yellow, style = "bold" },
@@ -342,23 +332,23 @@ function M.setup(config)
     LspCodeLensSeparator = { fg = c.medium_gray },
 
     -- mix
-    GitSignsCurrentLineBlame = { fg = c.faded_green},
+    GitSignsCurrentLineBlame = { fg = c.faded_green },
     Underlined = { fg = c.error_red, style = "underline" },
 
     -- Nvim Tree
-    NvimTreeNormal = { fg = c.foreground, bg = c.background_dark},
-    NvimTreeOpenedFile = { fg = c.foreground, style = "bold"},
-    NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark},
+    NvimTreeNormal = { fg = c.foreground, bg = c.background_dark },
+    NvimTreeOpenedFile = { fg = c.foreground, style = "bold" },
+    NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark },
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
     NvimTreeExecFile = { fg = c.forest_green, style = "bold" },
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
-    NvimTreeGitDirty = { fg = c.faded_yellow},
-    NvimTreeGitStaged = { fg = c.soft_green},
-    NvimTreeGitMerge = { fg = c.orange},
-    NvimTreeGitRenamed = { fg = c.clean_green},
+    NvimTreeGitDirty = { fg = c.faded_yellow },
+    NvimTreeGitStaged = { fg = c.soft_green },
+    NvimTreeGitMerge = { fg = c.orange },
+    NvimTreeGitRenamed = { fg = c.clean_green },
     NvimTreeGitNew = { fg = c.soft_green },
     NvimTreeGitDeleted = { fg = c.red },
 
@@ -403,9 +393,9 @@ function M.setup(config)
     CmpItemKindModule = { fg = c.blue_gray },
     CmpItemKindProperty = { fg = c.light_blue },
     CmpItemKindField = { fg = c.light_blue },
-    CmpItemKindTypeParameter = { fg = c.soft_yellow },
+    CmpItemKindTypeParameter = { fg = c.light_blue },
     CmpItemKindEnumMember = { fg = c.magenta },
-    CmpItemKindOperator = { fg = c.foreground},
+    CmpItemKindOperator = { fg = c.foreground },
     CmpItemKindSnippet = { fg = c.gray },
 
     -- Mutt-Mail:
@@ -421,7 +411,7 @@ function M.setup(config)
     mailQuoted5 = { fg = c.soft_green },
     mailQuoted6 = { fg = c.orange },
 
-    mailQuotedExp1 = { fg = c.foreground},
+    mailQuotedExp1 = { fg = c.foreground },
     mailQuotedExp2 = { fg = c.light_blue },
     mailQuotedExp3 = { fg = c.blue_gray },
     mailQuotedExp4 = { fg = c.pink },
@@ -469,7 +459,7 @@ function M.setup(config)
 
       TelescopePreviewTitle = { fg = c.background, bg = c.forest_green },
       TelescopePromptTitle = { fg = c.background, bg = c.soft_yellow },
-      TelescopeResultsTitle = { fg = c.background_dark, bg = c.foreground},
+      TelescopeResultsTitle = { fg = c.background_dark, bg = c.foreground },
 
       TelescopeSelection = { bg = c.diff.change },
     })
