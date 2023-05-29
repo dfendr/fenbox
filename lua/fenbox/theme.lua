@@ -344,7 +344,6 @@ function M.setup(config)
     -- mix
     GitSignsCurrentLineBlame = { fg = c.faded_green},
     Underlined = { fg = c.error_red, style = "underline" },
-    ["@variable.cpp"] = { fg = c.light_blue },
 
     -- Nvim Tree
     NvimTreeNormal = { fg = c.foreground, bg = c.background_dark},
@@ -356,10 +355,10 @@ function M.setup(config)
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
-    NvimTreeGitDirty = { fg = c.light_blue},
-    NvimTreeGitStaged = { fg = c.foreground },
-    NvimTreeGitMerge = { fg = c.soft_yellow },
-    NvimTreeGitRenamed = { fg = c.soft_yellow },
+    NvimTreeGitDirty = { fg = c.faded_yellow},
+    NvimTreeGitStaged = { fg = c.soft_green},
+    NvimTreeGitMerge = { fg = c.orange},
+    NvimTreeGitRenamed = { fg = c.faded_yellow},
     NvimTreeGitNew = { fg = c.soft_green },
     NvimTreeGitDeleted = { fg = c.red },
 
