@@ -342,7 +342,7 @@ function M.setup(config)
     LspCodeLensSeparator = { fg = c.medium_gray },
 
     -- mix
-    GitSignsCurrentLineBlame = { fg = c.medium_gray },
+    GitSignsCurrentLineBlame = { fg = c.faded_green},
     Underlined = { fg = c.error_red, style = "underline" },
     ["@variable.cpp"] = { fg = c.light_blue },
 
