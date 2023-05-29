@@ -358,7 +358,7 @@ function M.setup(config)
     NvimTreeGitDirty = { fg = c.faded_yellow},
     NvimTreeGitStaged = { fg = c.soft_green},
     NvimTreeGitMerge = { fg = c.orange},
-    NvimTreeGitRenamed = { fg = c.forest_green},
+    NvimTreeGitRenamed = { fg = c.clean_green},
     NvimTreeGitNew = { fg = c.soft_green },
     NvimTreeGitDeleted = { fg = c.red },
 
