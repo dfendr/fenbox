@@ -185,7 +185,7 @@ function M.setup(config)
     ["@lsp.type.method"] = { fg = c.soft_green, style = config.function_style },
     ["@lsp.type.namespace"] = { fg = c.foreground },
     ["@lsp.type.parameter"] = { fg = c.light_blue },
-    ["@lsp.type.property"] = { fg = c.blue_gray },
+    ["@lsp.type.property"] = { fg = c.light_blue},
     ["@lsp.type.struct"] = { fg = c.clean_green },
     ["@lsp.type.type"] = { fg = c.soft_yellow },
     ["@lsp.type.typeParameter"] = { fg = c.light_blue },
