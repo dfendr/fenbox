@@ -363,11 +363,11 @@ function M.setup(config)
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
 
-    FloatBorder = { fg = c.light_blue, bg = c.background },
+    FloatBorder = { fg = c.light_blue, bg = c.background_dark},
 
     -- Cmp
-    CmpDocumentation = { fg = c.foreground, bg = c.bg_float },
-    CmpDocumentationBorder = { fg = c.medium_gray, bg = c.bg_float },
+    CmpDocumentation = { fg = c.foreground, bg = c.background_dark},
+    CmpDocumentationBorder = { fg = c.medium_gray, bg = c.background_dark},
     CmpItemAbbr = { fg = c.foreground },
     CmpItemAbbrDeprecated = { fg = c.foreground, style = "strikethrough" },
     CmpItemAbbrMatch = { fg = c.light_blue, style = "bold" },
