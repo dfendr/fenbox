@@ -15,7 +15,7 @@ function M.setup(config)
   local theme = {}
   theme.defer = {}
   theme.base = {
-    NormalFloat = { fg = c.foreground, bg = c.background_dark },
+    NormalFloat = { fg = c.foreground, bg = c.background},
     Normal = { fg = c.foreground, bg = c.background },
     Comment = { fg = c.comment, style = config.comment_style },
     Constant = { fg = c.pink },
@@ -363,7 +363,7 @@ function M.setup(config)
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
 
-    FloatBorder = { fg = c.light_blue, bg = c.background_dark},
+    FloatBorder = { fg = c.light_blue, bg = c.background},
 
     -- Cmp
     CmpDocumentation = { fg = c.foreground, bg = c.background_dark},
