@@ -25,7 +25,7 @@ function M.setup(config)
     CursorLineNr = { fg = c.comment, style = "bold" },
     Define = { fg = c.magenta },
     DiagnosticError = { fg = c.red, style = "bold" },
-    DiagnosticInfo = { fg = c.light_blue},
+    DiagnosticInfo = { fg = c.dark_gray},
     DiagnosticWarn = { fg = c.bright_yellow},
     DiffAdd = { bg = c.diff.add },
     DiffChange = { bg = c.diff.change },
