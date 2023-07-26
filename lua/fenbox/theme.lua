@@ -24,9 +24,9 @@ function M.setup(config)
     Constant = { fg = c.pink },
     CursorLineNr = { fg = c.comment, style = "bold" },
     Define = { fg = c.magenta },
-    DiagnosticError = { fg = c.red, style = "bold" },
-    DiagnosticInfo = { fg = c.clean_green},
-    DiagnosticWarn = { fg = c.bright_yellow},
+    DiagnosticError = { fg = c.error_red, style = "bold" },
+    DiagnosticInfo = { fg = c.grey},
+    DiagnosticWarn = { fg = c.neutral_yellow},
     DiffAdd = { bg = c.diff.add },
     DiffChange = { bg = c.diff.change },
     DiffDelete = { bg = c.diff.delete },
@@ -393,7 +393,7 @@ function M.setup(config)
     CmpItemKindTypeParameter = { fg = c.light_blue },
     CmpItemKindEnumMember = { fg = c.magenta },
     CmpItemKindOperator = { fg = c.foreground },
-    CmpItemKindSnippet = { fg = c.gray },
+    CmpItemKindSnippet = { fg = c.grey },
 
     -- Mutt-Mail:
     mailHeader = { fg = c.red },
