@@ -338,7 +338,7 @@ function M.setup(config)
     NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark },
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
-    NvimTreeExecFile = theme.base.NvimTreeNormal,
+    NvimTreeExecFile = { fg = c.foreground, bg = c.background_dark },
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
