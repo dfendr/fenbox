@@ -40,7 +40,7 @@ return {
 
 ## 🌟 Showcase
 
->NOTE:  (Language examples to be added)
+>TODO:  (add language examples)
 
 <details>
 <summary>Which-Key provides easy reminders for more complex keybinds</summary>
