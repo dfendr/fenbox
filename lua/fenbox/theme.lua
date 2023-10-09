@@ -151,6 +151,9 @@ function M.setup(config)
     --
     -- per language TreeSitter
 
+    -- Markdown -- TODO: Fix this so I don't have to do it in my config
+    ["@text.strike.markdown_inline"] = { style = "strikethrough" },
+
     --Python
     ["@variable.python"] = { fg = c.foreground, style = "NONE" },
     ["@field.python"] = { fg = c.foreground, style = "NONE" },
@@ -338,7 +341,7 @@ function M.setup(config)
     NvimTreeNormalNC = { fg = c.foreground, bg = c.background_dark },
     NvimTreeFolderIcon = { fg = c.light_blue },
     NvimTreeRootFolder = { fg = c.magenta, style = "bold" },
-    NvimTreeExecFile = { fg = c.foreground},
+    NvimTreeExecFile = { fg = c.foreground },
     NvimTreeFolderName = { fg = c.light_blue, style = "bold" },
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
@@ -354,11 +357,19 @@ function M.setup(config)
     HopNextKey1 = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
     HopNextKey2 = { fg = c.foreground, bg = c.dark },
 
+
+    Whitespace = { fg = "#414141" },
+
+
     -- indent blankline
     IndentBlanklineChar = { fg = "#414141" },
-    IndentBlanklineSpaceChar = { fg = "#414141" },
     IndentBlanklineSpaceCharBlankline = { fg = "#414141" },
     IndentBlanklineContextChar = { fg = "#505050" },
+
+    -- indent blankline v3
+    IblWhitespace = { fg = "#414141" },
+    IblIndent = { fg = "#414141" },
+    IblScope = { fg = "#505050" },
 
     FloatBorder = { fg = c.light_blue, bg = c.background },
 
