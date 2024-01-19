@@ -87,6 +87,7 @@ function M.setup(config)
     Type = { fg = c.soft_yellow },
     Typedef = { fg = c.soft_yellow },
     VertSplit = { fg = c.medium_gray },
+    WinSeparator = { fg = c.medium_gray },
     VisualNOS = { fg = c.medium_gray },
     WarningMsg = { fg = c.soft_yellow },
     WildMenu = { fg = c.background, bg = c.blue_gray },
