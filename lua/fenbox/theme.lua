@@ -15,7 +15,6 @@ function M.setup(config)
   local theme = {}
   theme.defer = {}
   theme.base = {
-    -- Prev
     Boolean = { fg = c.pink },
     Character = { fg = c.soft_yellow },
     Comment = { fg = c.comment, style = config.comment_style },
@@ -329,7 +328,8 @@ function M.setup(config)
     MultiCursor = { bg = c.background_light },
     Cursor = { bg = c.medium_gray, fg = c.NONE },
 
-    LspCodeLens = { fg = c.medium_gray },
+    LspCodeLens = { fg = c.medium_gray, style = "italic" },
+    LspInlayHint = { fg = c.comment, style = "italic" },
     LspCodeLensSeparator = { fg = c.medium_gray },
 
     -- mix
@@ -358,9 +358,7 @@ function M.setup(config)
     HopNextKey1 = { fg = c.soft_yellow, bg = c.dark, style = "bold" },
     HopNextKey2 = { fg = c.foreground, bg = c.dark },
 
-
     Whitespace = { fg = "#414141" },
-
 
     -- indent blankline
     IndentBlanklineChar = { fg = "#414141" },
