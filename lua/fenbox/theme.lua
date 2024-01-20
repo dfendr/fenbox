@@ -40,6 +40,7 @@ function M.setup(config)
     Function = { fg = c.soft_green, style = config.function_style },
     Identifier = { fg = c.light_blue, style = config.variable_style },
     IncSearch = { bg = c.medium_gray },
+    CurSearch = { bg = c.milk},
     Include = { fg = c.red },
     Keyword = { fg = c.red, style = config.keyword_style },
     Label = { fg = c.dark_gray },
@@ -142,6 +143,7 @@ function M.setup(config)
     ["@text.strong"] = { style = "bold" },
     ["@text.title"] = { fg = c.bright_yellow, style = "bold" },
     ["@text.underline"] = { style = "underline" },
+    ["@text.strike"] = { fg = c.medium_gray, style = "strikethrough" },
     ["@type"] = { fg = c.soft_yellow },
     ["@type.builtin"] = { fg = c.soft_yellow },
     ["@type.qualifier"] = { fg = c.orange },
@@ -150,9 +152,6 @@ function M.setup(config)
     ["@variable.builtin"] = { fg = c.light_blue },
     --
     -- per language TreeSitter
-
-    -- Markdown -- TODO: Fix this so I don't have to do it in my config
-    ["@text.strike.markdown_inline"] = { style = "strikethrough" },
 
     --Python
     ["@variable.python"] = { fg = c.foreground, style = "NONE" },
@@ -213,6 +212,25 @@ function M.setup(config)
     htmlTagName = { fg = c.orange },
     htmlTitle = { fg = c.foreground },
 
+
+    ["@markup.heading.1.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.2.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.3.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.4.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.5.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.6.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.1.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.2.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.3.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.4.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.5.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.6.markdown"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.list.unchecked.markdown"] = { fg = c.magenta},
+    ["@markup.list.checked.markdown"] = { fg = c.magenta},
+    ["@markup.list.markdown"] = { fg = c.bright_yellow},
+    ["@markup.orderedlist.markdown"] = { fg = c.orange},
+    ["@markup.strikethrough.markdown_inline"] = { style = "strikethrough" },
+    ["@text.strike.markdown_inline"] = { style = "strikethrough" },
     markdownBlockquote = { fg = c.comment },
     markdownBold = { fg = c.bright_yellow, style = "bold" },
     markdownCode = { fg = c.soft_yellow },
@@ -330,6 +348,7 @@ function M.setup(config)
 
     LspCodeLens = { fg = c.medium_gray, style = "italic" },
     LspInlayHint = { fg = c.comment, style = "italic" },
+    DiagnosticUnnecessary = { fg = c.comment }, --, style = "italic" },
     LspCodeLensSeparator = { fg = c.medium_gray },
 
     -- mix
