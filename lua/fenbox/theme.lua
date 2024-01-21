@@ -48,6 +48,7 @@ function M.setup(config)
     Macro = { fg = c.bright_yellow },
     MatchParen = { bg = c.comment, style = "underline" },
     MoreMsg = { fg = c.foreground },
+    ModeMsg = { fg = c.foreground },
     NonText = { fg = c.comment },
     Normal = { fg = c.foreground, bg = c.background },
     NormalFloat = { fg = c.foreground, bg = c.background },
@@ -92,6 +93,34 @@ function M.setup(config)
     WarningMsg = { fg = c.soft_yellow },
     WildMenu = { fg = c.background, bg = c.blue_gray },
     debugPc = { bg = c.error_red },
+
+    -- folke's TODO
+    TodoBgTODO    = {fg = c.dark0, bg = c.clean_green, style = "bold"},
+    TodoFgTODO    = {fg = c.clean_green},
+    TodoSignTODO  = {fg = c.clean_green},
+    TodoBgWARN    = {fg = c.dark0,bg = c.neutral_yellow, style = "bold"},
+    TodoFgWARN    = {fg = c.faded_yellow},
+    TodoSignWARN  = {fg = c.faded_yellow},
+    TodoBgFIX     = {fg = c.milk,bg = c.error_red, style = "bold"},
+
+    TodoFgFIX     = {fg = c.error_red},
+    TodoSignFIX   = {fg = c.error_red},
+    TodoBgNOTE    = {fg = c.dark0,bg = c.soft_green, style = "bold"},
+    TodoFgNOTE    = {fg = c.soft_green},
+    TodoSignNOTE  = {fg = c.soft_green},
+    TodoBgWAR     = {fg = c.dark0,bg = c.neutral_yellow, style = "bold"},
+    TodoFgWAR     = {fg = c.neutral_yellow},
+    TodoSignWAR   = {fg = c.neutral_yellow},
+    TodoBgHACK    = {fg = c.dark0,bg = c.orange, style = "bold"},
+    TodoFgHACK    = {fg = c.orange},
+    TodoSignHACK  = {fg = c.orange},
+    TodoBgPERF    = {fg = c.dark0,bg = c.magenta, style = "bold"},
+    TodoFgPERF    = {fg = c.magenta},
+    TodoSignPERF  = {fg = c.magenta},
+    TodoBgTEST    = {fg = c.dark0,bg = c.light_blue, style = "bold"},
+    TodoFgTEST    = {fg = c.light_blue},
+    TodoSignTEST  = {fg = c.light_blue},
+
 
     -- Tree Sitter
     ["@boolean"] = { fg = c.pink },
@@ -424,6 +453,49 @@ function M.setup(config)
     CmpItemKindOperator = { fg = c.foreground },
     CmpItemKindSnippet = { fg = c.grey },
 
+
+    -- DapUI/Debug UI
+
+    DapUIBreakpointsCurrentLine = {fg = c.clean_green, style = "bold"},
+    DapUIBreakpointsDisabledLine = {fg = c.comment},
+    DapUIBreakpointsInfo = {fg = c.clean_green},
+    DapUIBreakpointsLine = {fg = c.red},
+    DapUIBreakpointsPath = {fg = c.light_blue},
+    DapUICurrentFrameName = {fg = c.clean_green, style = "bold"},
+    DapUIDecoration = {fg = c.light_blue},
+    DapUIFloatBorder = { fg = c.light_blue, bg = c.background },
+    DapUILineNumber = {fg = c.red},
+    DapUIModifiedValue = {fg = c.grey, style = "bold"},
+    DapUIPlayPause = {fg = c.clean_green},
+    DapUIPlayPauseNC = {fg = c.clean_green},
+    DapUIRestart = {fg = c.clean_green},
+    DapUIRestartNC = {fg = c.clean_green},
+    DapUIScope = {fg = c.magenta},
+    DapUISource = {fg = c.soft_yellow},
+    DapUIStepBack = {fg = c.milk},
+    DapUIStepBackNC = {fg = c.milk},
+    DapUIStepInto = {fg = c.milk},
+    DapUIStepIntoNC = {fg = c.milk},
+    DapUIStepOut = {fg = c.milk},
+    DapUIStepOutNC = {fg = c.milk},
+    DapUIStepOver = {fg = c.milk},
+    DapUIStepOverNC = {fg = c.milk},
+    DapUIStop = {fg = c.red},
+    DapUIStopNC = {fg = c.red},
+    DapUIStoppedThread = {fg = c.blue_gray},
+    DapUIThread = {fg = c.clean_green},
+    DapUIType = {fg = c.soft_yellow},
+    DapUIUnavailable = {fg = c.grey},
+    DapUIUnavailableNC = {fg = c.grey},
+    DapUIWatchesEmpty = {fg = c.error_red},
+    DapUIWatchesError = {fg = c.error_red},
+    DapUIWatchesValue = {fg = c.clean_green},
+    DapUIWinSelect = {fg = c.light_blue, style = "bold"},
+    DapUIVariable  = {fg = c.light_blue, style = config.variable_style},
+    DapUIValue  = {fg = c.milk},
+    DapUIFrameName  = {fg = c.milk},
+    DapUINormalNC  = {fg = c.milk},
+
     -- Mutt-Mail:
     mailHeader = { fg = c.red },
     mailHeaderKey = { fg = c.red },
@@ -490,6 +562,7 @@ function M.setup(config)
       TelescopeSelection = { bg = c.diff.change },
     })
   end
+
 
   if config.transparent_mode then
     theme.base = vim.tbl_extend("force", theme.base, {
