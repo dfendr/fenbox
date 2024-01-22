@@ -263,6 +263,10 @@ function M.setup(config)
     ["@markup.strikethrough.markdown_inline"] = { style = "strikethrough" },
     ["@text.strike.markdown_inline"] = { style = "strikethrough" },
     ["@markup.raw.markdown_inline"] = { fg = c.light_blue },
+    ["@markup.link.markdown_inline"] = { fg = c.foreground, style = "bold" },
+    ["@markup.link.url.markdown_inline"] = { fg = c.light_blue, style = "underline"},
+    ["@markup.link.label.markdown_inline"] = { fg = c.light_blue},
+
     markdownBlockquote = { fg = c.comment },
     markdownBold = { fg = c.bright_yellow, style = "bold" },
     markdownCode = { fg = c.soft_yellow },
