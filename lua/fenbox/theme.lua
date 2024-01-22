@@ -262,6 +262,7 @@ function M.setup(config)
     ["@markup.orderedlist.markdown"] = { fg = c.orange},
     ["@markup.strikethrough.markdown_inline"] = { style = "strikethrough" },
     ["@text.strike.markdown_inline"] = { style = "strikethrough" },
+    ["@markup.raw.markdown_inline"] = { fg = c.light_blue },
     markdownBlockquote = { fg = c.comment },
     markdownBold = { fg = c.bright_yellow, style = "bold" },
     markdownCode = { fg = c.soft_yellow },
