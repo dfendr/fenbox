@@ -257,6 +257,8 @@ function M.setup(config)
     ["@markup.list.unchecked.markdown"] = { fg = c.magenta},
     ["@markup.list.checked.markdown"] = { fg = c.magenta},
     ["@markup.list.markdown"] = { fg = c.bright_yellow},
+    ["@markup.strong.markdown_inline"] = { style="bold"},
+    ["@markup.italic.markdown_inline"] = { style="italic"},
     ["@markup.orderedlist.markdown"] = { fg = c.orange},
     ["@markup.strikethrough.markdown_inline"] = { style = "strikethrough" },
     ["@text.strike.markdown_inline"] = { style = "strikethrough" },
