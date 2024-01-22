@@ -40,7 +40,7 @@ function M.setup(config)
     Function = { fg = c.soft_green, style = config.function_style },
     Identifier = { fg = c.light_blue, style = config.variable_style },
     IncSearch = { bg = c.medium_gray },
-    CurSearch = { bg = c.milk},
+    CurSearch = { fg = c.dark0, bg = c.neutral_yellow, style = "bold"},
     Include = { fg = c.red },
     Keyword = { fg = c.red, style = config.keyword_style },
     Label = { fg = c.dark_gray },
