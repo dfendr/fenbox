@@ -4,6 +4,7 @@ local M = {}
 
 local the_palette = {
   dark0 = "#0d0e0f",
+  dark1 = "#5E554F",
   dark = "#202020",
   foreground = "#ebdbb2",
   background = "#282828",
