@@ -19,7 +19,7 @@ function M.setup(config)
     Character = { fg = c.soft_yellow },
     Comment = { fg = c.comment, style = config.comment_style },
     Conceal = { fg = c.comment },
-    Conditional = { fg = c.foreground },
+    Conditional = { fg = c.red},
     Constant = { fg = c.pink },
     CursorLineNr = { fg = c.comment, style = "bold" },
     Define = { fg = c.magenta },
@@ -325,6 +325,9 @@ function M.setup(config)
     CocExplorerFileHidden = { fg = c.comment },
     CocExplorerHelpLine = { fg = c.magenta },
     CocHighlightText = { bg = c.dark },
+
+    --DBUI
+    dbui_connection_ok = {fg = c.soft_green},
 
     EasyMotionTarget = { fg = c.red, style = "bold" },
     EasyMotionTarget2First = { fg = c.red, style = "bold" },
