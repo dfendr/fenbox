@@ -128,7 +128,7 @@ function M.setup(config)
     ["@conditional"] = { fg = c.red },
     ["@constant"] = { fg = c.pink, style = "bold" },
     ["@constant.builtin"] = { fg = c.pink },
-    ["@constructor"] = { fg = c.clean_green, style = "nocombine" },
+    ["@constructor"] = { fg = c.soft_yellow, style = "nocombine" },
     ["@define"] = { fg = c.red },
     ["@definition.constant"] = { fg = c.pink, style = "bold" },
     ["@error"] = { fg = c.red },
