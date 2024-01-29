@@ -84,7 +84,7 @@ function M.setup(config)
     TabLineSel = { fg = c.foreground, bg = c.background_dark }, -- tab pages line, active tab page label
     Terminal = { fg = c.foreground, bg = c.background },
     Title = { fg = c.foreground },
-    Todo = { fg = c.magenta, style = "bold" },
+    Todo = { fg = c.clean_green, style = "bold" },
     Type = { fg = c.soft_yellow },
     Typedef = { fg = c.soft_yellow },
     VertSplit = { fg = c.medium_gray },
@@ -376,7 +376,7 @@ function M.setup(config)
     ObsidianTodo = { fg = c.orange, style = "bold"},
     ObsidianTag = { fg = c.light_blue, style = "italic" },
     ObsidianExtLinkIcon = { fg = c.light_blue},
-    ObsidianRefText = { fg = c.light_blue, style = "underline" },
+    ObsidianRefText = { fg = c.light_blue },
 
     -- Vimwiki
     VimwikiHeader1 = { fg = c.orange, style = "bold" },
