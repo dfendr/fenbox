@@ -19,13 +19,14 @@ function M.setup(config)
     Character = { fg = c.soft_yellow },
     Comment = { fg = c.comment, style = config.comment_style },
     Conceal = { fg = c.comment },
-    Conditional = { fg = c.red},
+    Conditional = { fg = c.red },
     Constant = { fg = c.pink },
     CursorLineNr = { fg = c.comment, style = "bold" },
     Define = { fg = c.magenta },
     DiagnosticError = { fg = c.error_red, style = "bold" },
     DiagnosticInfo = { fg = c.grey },
     DiagnosticWarn = { fg = c.neutral_yellow },
+    DiagnosticOk = { fg = c.background, bg = c.soft_green },
     DiffAdd = { bg = c.diff.add },
     DiffChange = { bg = c.diff.change },
     DiffDelete = { bg = c.diff.delete },
@@ -293,7 +294,6 @@ function M.setup(config)
     markdownRule = { fg = c.comment },
     markdownUrl = { fg = c.soft_green, style = "underline" },
 
-
     phpInclude = { fg = c.magenta },
     phpClass = { fg = c.soft_yellow },
     phpClasses = { fg = c.soft_yellow },
@@ -327,7 +327,7 @@ function M.setup(config)
     CocHighlightText = { bg = c.dark },
 
     --DBUI
-    dbui_connection_ok = {fg = c.soft_green},
+    dbui_connection_ok = { fg = c.soft_green },
 
     EasyMotionTarget = { fg = c.red, style = "bold" },
     EasyMotionTarget2First = { fg = c.red, style = "bold" },
@@ -366,16 +366,15 @@ function M.setup(config)
     GitGutterDelete = { fg = c.error_red },
     debugBreakpoint = { fg = c.error_red, style = "reverse" },
 
-
     -- Obsidian.nvim
-    ObsidianBullet = { fg = c.light_blue},
-    ObsidianTilde = { fg = c.red},
+    ObsidianBullet = { fg = c.light_blue },
+    ObsidianTilde = { fg = c.red },
     ObsidianRightArrow = { fg = c.orange, style = "underline" },
-    ObsidianHighlightText = { bg = c.soft_yellow},
+    ObsidianHighlightText = { bg = c.soft_yellow },
     ObsidianDone = { fg = c.light_blue, style = "bold" },
-    ObsidianTodo = { fg = c.orange, style = "bold"},
+    ObsidianTodo = { fg = c.orange, style = "bold" },
     ObsidianTag = { fg = c.light_blue, style = "italic" },
-    ObsidianExtLinkIcon = { fg = c.light_blue},
+    ObsidianExtLinkIcon = { fg = c.light_blue },
     ObsidianRefText = { fg = c.light_blue },
 
     -- Vimwiki
