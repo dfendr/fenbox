@@ -55,10 +55,10 @@ function M.setup(config)
     NormalFloat = { fg = c.foreground, bg = c.background },
     Number = { fg = c.pink },
     Operator = { fg = c.foreground },
-    Pmenu = { fg = c.foreground, bg = c.medium_gray },
+    Pmenu = { fg = c.foreground  },
     PmenuSbar = { bg = c.background_light },
-    PmenuSel = { fg = c.background_light, bg = c.light_blue, style = "bold" },
-    PmenuThumb = { bg = c.comment },
+    PmenuSel = { fg = c.foreground, bg = c.medium_gray},
+    PmenuThumb = { bg = c.medium_gray},
     PreCondit = { fg = c.magenta },
     PreProc = { fg = c.soft_yellow },
     Question = { fg = c.magenta },
@@ -93,6 +93,8 @@ function M.setup(config)
     VisualNOS = { fg = c.medium_gray },
     WarningMsg = { fg = c.soft_yellow },
     WildMenu = { fg = c.background, bg = c.blue_gray },
+    WinBar = {},
+    WinBarNC = {},
     debugPc = { bg = c.error_red },
 
     -- folke's TODO
