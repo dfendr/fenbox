@@ -575,10 +575,10 @@ function M.setup(config)
     BufferLineBufferSelected = { fg = c.foreground },
     BufferLineBufferVisible = { fg = c.comment, bg = c.background },
     BufferLineBuffer = { fg = c.comment, bg = c.background },
-    BufferLineModfied = { fg = c.comment, bg = c.background_light },
-    BufferLineModifiedSelected = { fg = c.foreground, bg = c.background },
+    BufferLineModfied = { fg = c.comment, bg = c.background },
+    BufferLineModifiedSelected = { fg = c.foreground, bg = c.background_dark },
     BufferLineModifiedVisible = { fg = c.comment, bg = c.background },
-    BufferLineSeparator = { fg = c.foreground, bg = c.background_light },
+    BufferLineSeparator = { fg = c.background_light, bg = c.background_dark },
 
     -- TODO: Fill these in
     -- lualine_a_insert = { fg = c.foreground, bg = c.background },
