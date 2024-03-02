@@ -31,30 +31,38 @@ local length_of_ray_until_intersect = function(theta, line)
   return line.intercept / (math.sin(theta) - line.slope * math.cos(theta))
 end
 
-
 function hsluv.Dec2Hex(nValue)
-    if type(nValue) == "string" then
-        nValue = tonumber(nValue)
-    end
-    local nHexVal = string.format("%X", nValue) -- %X returns uppercase hex, %x gives lowercase letters
-    local sHexVal = nHexVal .. ""
-    if nValue < 16 then
-        return "0" .. tostring(sHexVal)
-    else
-        return sHexVal
-    end
+  if type(nValue) == "string" then
+    nValue = tonumber(nValue)
+  end
+  local nHexVal = string.format("%X", nValue) -- %X returns uppercase hex, %x gives lowercase letters
+  local sHexVal = nHexVal .. ""
+  if nValue < 16 then
+    return "0" .. tostring(sHexVal)
+  else
+    return sHexVal
+  end
 end
 
 function hsluv.fade_RGB(colour1, colour2, percentage)
-    local r1, g1, b1 = string.match(colour1, "#(%x%x)(%x%x)(%x%x)")
-    local r2, g2, b2 = string.match(colour2, "#(%x%x)(%x%x)(%x%x)")
-    local r3 = tonumber(r1, 16) * (100 - percentage) / 100.0 + tonumber(r2, 16) * percentage / 100.0
-    local g3 = tonumber(g1, 16) * (100 - percentage) / 100.0 + tonumber(g2, 16) * percentage / 100.0
-    local b3 = tonumber(b1, 16) * (100 - percentage) / 100.0 + tonumber(b2, 16) * percentage / 100.0
-    return "#" .. hsluv.Dec2Hex(r3) .. hsluv.Dec2Hex(g3) .. hsluv.Dec2Hex(b3)
+  -- Background is default mix colour if colours given are invalid
+  local default_color = require("fenbox.colors").p.background
+
+  -- Replace "NONE" or invalid color with the default color
+  if type(colour1) ~= "string" or not colour1:match("^#%x%x%x%x%x%x$") then
+    colour1 = default_color
+  end
+  if type(colour2) ~= "string" or not colour2:match("^#%x%x%x%x%x%x$") or colour2 == "NONE" then
+    colour2 = default_color
+  end
+
+  local r1, g1, b1 = string.match(colour1, "#(%x%x)(%x%x)(%x%x)")
+  local r2, g2, b2 = string.match(colour2, "#(%x%x)(%x%x)(%x%x)")
+  local r3 = tonumber(r1, 16) * (100 - percentage) / 100.0 + tonumber(r2, 16) * percentage / 100.0
+  local g3 = tonumber(g1, 16) * (100 - percentage) / 100.0 + tonumber(g2, 16) * percentage / 100.0
+  local b3 = tonumber(b1, 16) * (100 - percentage) / 100.0 + tonumber(b2, 16) * percentage / 100.0
+  return "#" .. hsluv.Dec2Hex(r3) .. hsluv.Dec2Hex(g3) .. hsluv.Dec2Hex(b3)
 end
-
-
 
 hsluv.get_bounds = function(l)
   local result = {}
