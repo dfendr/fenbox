@@ -219,6 +219,7 @@ function M.setup(config)
     ["@lsp.type.interface"] = { fg = c.soft_yellow },
     ["@lsp.type.macro"] = { fg = c.bright_yellow },
     ["@lsp.type.macro.c"] = { fg = c.magenta },
+    ["@lsp.type.macro.cpp"] = { fg = c.magenta },
     ["@lsp.type.method"] = { fg = c.soft_green, style = config.function_style },
     ["@lsp.type.namespace"] = { fg = c.foreground },
     ["@lsp.type.parameter"] = { fg = c.light_blue },
