@@ -183,7 +183,7 @@ function M.setup(config)
     ["@text.strike"] = { fg = c.medium_gray, style = "strikethrough" },
     ["@type"] = { fg = c.soft_yellow },
     ["@type.builtin"] = { fg = c.soft_yellow },
-    ["@type.qualifier"] = { fg = c.orange },
+    ["@keyword.qualifier"] = { fg = c.orange },
     ["@uri"] = { fg = c.soft_yellow },
     ["@variable"] = { fg = c.light_blue, style = config.variable_style },
     ["@variable.builtin"] = { fg = c.light_blue },
@@ -213,22 +213,37 @@ function M.setup(config)
     -- General Semantic Highlights
     ["@lsp.type.class"] = { fg = c.soft_yellow },
     ["@lsp.type.decorator"] = { fg = c.orange, stlye = "bold" },
-    ["@lsp.type.enum"] = { fg = c.soft_yellow },
+    ["@lsp.type.enum"] = { fg = c.magenta},
     ["@lsp.type.enumMember"] = { fg = c.magenta },
     ["@lsp.type.function"] = { fg = c.soft_green, style = config.function_style },
     ["@lsp.type.interface"] = { fg = c.soft_yellow },
-    ["@lsp.type.macro"] = { fg = c.bright_yellow },
-    ["@lsp.type.macro.c"] = { fg = c.magenta },
-    ["@lsp.type.macro.cpp"] = { fg = c.magenta },
+    ["@lsp.type.macro"] = { fg = c.magenta },
     ["@lsp.type.method"] = { fg = c.soft_green, style = config.function_style },
     ["@lsp.type.namespace"] = { fg = c.foreground },
     ["@lsp.type.parameter"] = { fg = c.light_blue },
     ["@lsp.type.property"] = { fg = c.light_blue },
-    ["@lsp.type.struct"] = { fg = c.clean_green },
+    ["@lsp.type.struct"] = { fg = c.soft_yellow},
     ["@lsp.type.type"] = { fg = c.soft_yellow },
-    ["@lsp.type.typeParameter"] = { fg = c.light_blue },
+    ["@lsp.type.typeParameter"] = { fg = c.soft_yellow},
+
+
     ["@lsp.type.variable"] = { fg = c.light_blue, style = config.variable_style },
 
+    -- Rust
+    ["@lsp.typemod.namespace.library.rust"] = { fg = c.foreground},
+    ["@lsp.type.macro.rust"] = { fg = c.clean_green},
+    ["@lsp.type.enum.rust"] = { fg = c.soft_yellow},
+
+    -- Lua
+    ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.orange, style = config.function_style},
+
+    -- Java
+
+    ["@type.qualifier.java"] = { fg = c.red },
+    ["@type.builtin.java"] = { fg = c.red },
+
+    -- Python
+    ["@lsp.typemod.function.defaultLibrary.python"] = { fg = c.orange, style = config.function_style},
     -- Neorg
     ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     -- plugin Tressitter
