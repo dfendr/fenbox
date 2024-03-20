@@ -200,6 +200,9 @@ function M.setup(config)
     -- Rust
     ["@storageclass.rust"] = { fg = c.red },
     ["@function.macro.rust"] = { fg = c.clean_green },
+    ["@attribute.rust"] = { fg = c.orange},
+
+    -- ["@keyword.modifier.rust"] = { fg = c.orange},  -- mut, pub, static
 
     -- JSON
     ["@label.json"] = { fg = c.light_blue },
@@ -424,9 +427,7 @@ function M.setup(config)
     Cursor = { bg = c.medium_gray, fg = c.NONE },
 
     LspCodeLens = { fg = c.medium_gray, style = "italic" },
-    -- LspInlayHint = { fg = c.comment, style = "italic" },
     LspInlayHint = { fg = c.comment, bg = funcs.fade_RGB(c.comment, c.background, 90), style = "italic" },
-    -- DiagnosticUnnecessary = { fg = c.background_light }, --, style = "italic" },
     LspCodeLensSeparator = { fg = c.medium_gray },
 
     -- mix
@@ -444,6 +445,7 @@ function M.setup(config)
     NvimTreeOpenedFolderName = { fg = c.light_blue, style = "bold" },
 
     NvimTreeGitDirty = { fg = c.faded_yellow },
+    NvimTreeGitDirtyIcon = { fg = c.faded_yellow },
     NvimTreeGitStaged = { fg = c.soft_green },
     NvimTreeGitMerge = { fg = c.orange },
     NvimTreeGitRenamed = { fg = c.clean_green },
