@@ -72,7 +72,7 @@ function M.setup(config)
     SpellBad = { sp = c.red, style = "undercurl" },
     SpellCap = { fg = c.bright_yellow },
     SpellLocal = { fg = c.bright_yellow },
-    SpellRare = { sp= c.bright_yellow, style = "undercurl" },
+    SpellRare = { sp = c.bright_yellow, style = "undercurl" },
     Statement = { fg = c.red },
     StatusLine = { fg = c.foreground, bg = c.medium_gray },
     StatusLineNC = { fg = c.comment },
@@ -200,7 +200,8 @@ function M.setup(config)
     -- Rust
     ["@storageclass.rust"] = { fg = c.red },
     ["@function.macro.rust"] = { fg = c.clean_green },
-    ["@attribute.rust"] = { fg = c.orange},
+    ["@attribute.rust"] = { fg = c.orange },
+    ["@lsp.typemod.number.injected.rust"] = { fg = c.magenta },
 
     -- ["@keyword.modifier.rust"] = { fg = c.orange},  -- mut, pub, static
 
@@ -216,7 +217,7 @@ function M.setup(config)
     -- General Semantic Highlights
     ["@lsp.type.class"] = { fg = c.soft_yellow },
     ["@lsp.type.decorator"] = { fg = c.orange, stlye = "bold" },
-    ["@lsp.type.enum"] = { fg = c.magenta},
+    ["@lsp.type.enum"] = { fg = c.magenta },
     ["@lsp.type.enumMember"] = { fg = c.magenta },
     ["@lsp.type.function"] = { fg = c.soft_green, style = config.function_style },
     ["@lsp.type.interface"] = { fg = c.soft_yellow },
@@ -225,20 +226,19 @@ function M.setup(config)
     ["@lsp.type.namespace"] = { fg = c.foreground },
     ["@lsp.type.parameter"] = { fg = c.light_blue },
     ["@lsp.type.property"] = { fg = c.light_blue },
-    ["@lsp.type.struct"] = { fg = c.soft_yellow},
+    ["@lsp.type.struct"] = { fg = c.soft_yellow },
     ["@lsp.type.type"] = { fg = c.soft_yellow },
-    ["@lsp.type.typeParameter"] = { fg = c.soft_yellow},
-
+    ["@lsp.type.typeParameter"] = { fg = c.soft_yellow },
 
     ["@lsp.type.variable"] = { fg = c.light_blue, style = config.variable_style },
 
     -- Rust
-    ["@lsp.typemod.namespace.library.rust"] = { fg = c.foreground},
-    ["@lsp.type.macro.rust"] = { fg = c.clean_green},
-    ["@lsp.type.enum.rust"] = { fg = c.soft_yellow},
+    ["@lsp.typemod.namespace.library.rust"] = { fg = c.foreground },
+    ["@lsp.type.macro.rust"] = { fg = c.clean_green },
+    ["@lsp.type.enum.rust"] = { fg = c.soft_yellow },
 
     -- Lua
-    ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.orange, style = config.function_style},
+    ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.orange, style = config.function_style },
 
     -- Java
 
@@ -246,7 +246,7 @@ function M.setup(config)
     ["@type.builtin.java"] = { fg = c.red },
 
     -- Python
-    ["@lsp.typemod.function.defaultLibrary.python"] = { fg = c.orange, style = config.function_style},
+    ["@lsp.typemod.function.defaultLibrary.python"] = { fg = c.orange, style = config.function_style },
     -- Neorg
     ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     -- plugin Tressitter
