@@ -589,6 +589,9 @@ function M.setup(config)
     DashboardCenter = { fg = c.bright_yellow },
     DashboardFooter = { fg = c.blue_gray },
 
+    -- Headline.nvim
+    Headline = { bg = c.dark1},
+
     -- Bufferline
     BufferLineIndicatorSelected = { fg = c.foreground },
     BufferLineFill = { fg = c.dark1 }, -- e.g. transparent
