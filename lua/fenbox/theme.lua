@@ -294,6 +294,7 @@ function M.setup(config)
     ["@markup.link.url.markdown_inline"] = { fg = c.light_blue, style = "underline" },
     ["@markup.link.label.markdown_inline"] = { fg = c.light_blue },
     ["@string.special.url.comment"] = { fg = c.light_blue, style = "underline" },
+    ["@string.special.url.gitcommit"] = { fg = c.light_blue },
     ["@markup.link"] = { fg = c.light_blue },
     ["@markup.link.vimdoc"] = { fg = c.light_blue },
 
@@ -593,7 +594,7 @@ function M.setup(config)
     DashboardFooter = { fg = c.blue_gray },
 
     -- Headline.nvim
-    Headline = { bg = c.dark1},
+    Headline = { bg = c.dark1 },
 
     -- Bufferline
     BufferLineIndicatorSelected = { fg = c.foreground },
