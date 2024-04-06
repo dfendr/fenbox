@@ -294,6 +294,7 @@ function M.setup(config)
     ["@markup.link.url.markdown_inline"] = { fg = c.light_blue, style = "underline" },
     ["@markup.link.label.markdown_inline"] = { fg = c.light_blue },
     ["@string.special.url.comment"] = { fg = c.light_blue, style = "underline" },
+    ["@markup.link.vimdoc"] = { fg = c.light_blue },
 
     markdownBlockquote = { fg = c.comment },
     markdownBold = { fg = c.bright_yellow, style = "bold" },
