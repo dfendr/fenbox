@@ -340,6 +340,7 @@ function M.setup(config)
     phpDocTags = { fg = c.magenta },
     phpDocParam = { fg = c.magenta },
 
+    -- CoC
     CocExplorerIndentLine = { fg = c.comment },
     CocExplorerBufferRoot = { fg = c.orange },
     CocExplorerFileRoot = { fg = c.orange },
@@ -353,6 +354,10 @@ function M.setup(config)
     CocExplorerFileHidden = { fg = c.comment },
     CocExplorerHelpLine = { fg = c.magenta },
     CocHighlightText = { bg = c.dark },
+
+    --Alpha
+    AlphaButtons = { fg = c.magenta, style = "bold" },
+
 
     --DBUI
     dbui_connection_ok = { fg = c.soft_green },
