@@ -161,6 +161,7 @@ function M.setup(config)
     ["@parameter"] = { fg = c.light_blue, style = "nocombine" },
     ["@parameter.reference"] = { fg = c.dark_gray },
     ["@property"] = { fg = c.foreground },
+    ["@property.ini"] = { fg = c.light_blue },
     ["@property.json"] = { fg = c.light_blue },
     ["@punctuation.bracket"] = { fg = c.foreground },
     ["@punctuation.delimiter"] = { fg = c.foreground },
