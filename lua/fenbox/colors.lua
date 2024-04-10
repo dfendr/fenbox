@@ -2,57 +2,58 @@ local util = require("fenbox.util")
 
 local M = {}
 
-local gruvboxbaby_palette = {
-  dark0 = "#0d0e0f",
-  dark1 = "#171919",
-  dark2 = "#5E554F",
-  dark = "#202020",
-  foreground = "#ebdbb2",
+local palette = {
   background = "#282828",
   background_dark = "#1d2021",
   background_light = "#32302f",
-  medium_gray = "#504945",
-  comment = "#665c54",
-  grey = "#DEDEDE",
-  soft_yellow = "#eebd35",
-  soft_green = "#98971a",
-  faded_green = "#79740e",
-  bright_yellow = "#fabd2f",
-  neutral_yellow = "#d79921",
-  faded_yellow = "#b57614",
-  orange = "#d65d0e",
-  red = "#fb4934",
-  error_red = "#cc241d",
-  magenta = "#b16286",
-  pink = "#D4879C",
-  light_blue = "#7fa2ac",
-  dark_gray = "#83a598",
   blue_gray = "#458588",
-  forest_green = "#689d6a",
+  bright_yellow = "#fabd2f",
   clean_green = "#8ec07c",
+  dark = "#202020",
+  dark0 = "#0d0e0f",
+  dark1 = "#171919",
+  dark2 = "#5E554F",
+  dark_gray = "#83a598",
+  error_red = "#cc241d",
+  faded_green = "#79740e",
+  faded_yellow = "#b57614",
+  grey = "#DEDEDE",
+  medium_gray = "#504945",
   milk = "#E7D7AD",
+  neutral_yellow = "#d79921",
   none = "NONE",
+  pink = "#D4879C",
+  red = "#fb4934",
+
+  comment = "#928374",
+  foreground = "#fbf1c7",
+  forest_green = "#b8bb26",
+  gray = "#928374",
+  light_blue = "#83a598",
+  magenta = "#d3869b",
+  orange = "#fe8019",
+  soft_green = "#b8bb26",
+  soft_yellow = "#fabd2f",
 }
 
 -- these are backgrounds
-gruvboxbaby_palette.diff = {
+palette.diff = {
   add = "#26332c",
   change = "#273842",
   delete = "#572E33",
   text = "#314753",
 }
-M.p = gruvboxbaby_palette
+M.p = palette
 
-local original_palette = vim.tbl_extend("force", gruvboxbaby_palette, {
-  foreground = "#fbf1c7",
-  soft_green = "#b8bb26",
-  forest_green = "#b8bb26",
-  soft_yellow = "#fabd2f",
-  light_blue = "#83a598",
-  magenta = "#d3869b",
-  orange = "#fe8019",
-  gray = "#928374",
-  comment = "#928374",
+local gruvboxbaby_palette = vim.tbl_extend("force", palette, {
+  comment = "#665c54",
+  foreground = "#ebdbb2",
+  forest_green = "#689d6a",
+  light_blue = "#7fa2ac",
+  magenta = "#b16286",
+  orange = "#d65d0e",
+  soft_green = "#98971a",
+  soft_yellow = "#eebd35",
 })
 
 function M.config(config)
@@ -61,7 +62,7 @@ function M.config(config)
   if config.use_gruvboxbaby_palette then
     colors = gruvboxbaby_palette
   else
-    colors = original_palette
+    colors = palette
   end
 
   local intensity_map = {

@@ -24,7 +24,7 @@ return {
             vim.g.fenbox_comment_style = { "italic" }
             vim.g.fenbox_function_style = { "bold" }
             vim.g.fenbox_keyword_style = "NONE"
-            vim.g.fenbox_use_original_palette = true
+            vim.g.fenbox_use_gruvboxbaby_palette = false
 
             local colorscheme = "fenbox"
             local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
@@ -38,7 +38,7 @@ return {
 
 ## 🌟 Showcase
 
->TODO:  (add language examples)
+> TODO: (add language examples)
 
 <details>
 <summary>Which-Key provides easy reminders for more complex keybinds</summary>
