@@ -2,7 +2,7 @@ local util = require("fenbox.util")
 
 local M = {}
 
-local the_palette = {
+local gruvboxbaby_palette = {
   dark0 = "#0d0e0f",
   dark1 = "#171919",
   dark2 = "#5E554F",
@@ -35,15 +35,15 @@ local the_palette = {
 }
 
 -- these are backgrounds
-the_palette.diff = {
+gruvboxbaby_palette.diff = {
   add = "#26332c",
   change = "#273842",
   delete = "#572E33",
   text = "#314753",
 }
-M.p = the_palette
+M.p = gruvboxbaby_palette
 
-local original_palette = vim.tbl_extend("force", the_palette, {
+local original_palette = vim.tbl_extend("force", gruvboxbaby_palette, {
   foreground = "#fbf1c7",
   soft_green = "#b8bb26",
   forest_green = "#b8bb26",
@@ -58,10 +58,10 @@ local original_palette = vim.tbl_extend("force", the_palette, {
 function M.config(config)
   config = config or require("fenbox.config")
   local colors
-  if config.use_original_palette then
-    colors = original_palette
+  if config.use_gruvboxbaby_palette then
+    colors = gruvboxbaby_palette
   else
-    colors = the_palette
+    colors = original_palette
   end
 
   local intensity_map = {
