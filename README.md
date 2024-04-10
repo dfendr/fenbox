@@ -12,7 +12,7 @@
 ```lua
 return {
     {
-        "postfen/fenbox",
+        "dfendr/fenbox",
         -- branch = "sandbox",
         lazy = false,
         priority = 1000, -- make sure to load this before all the other start plugins
@@ -25,8 +25,6 @@ return {
             vim.g.fenbox_function_style = { "bold" }
             vim.g.fenbox_keyword_style = "NONE"
             vim.g.fenbox_use_original_palette = true
-
-            vim.cmd("hi @neorg.markup.strikethrough gui=strikethrough")
 
             local colorscheme = "fenbox"
             local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
