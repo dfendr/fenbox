@@ -270,6 +270,11 @@ function M.setup(config)
     htmlTagName = { fg = c.orange },
     htmlTitle = { fg = c.foreground },
 
+    ["@markup.heading.1.latex"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.2.latex"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.3.latex"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.4.latex"] = { fg = c.bright_yellow, style = "bold" },
+    ["@markup.heading.5.latex"] = { fg = c.bright_yellow, style = "bold" },
     ["@markup.heading.1.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
     ["@markup.heading.2.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
     ["@markup.heading.3.marker.markdown"] = { fg = c.bright_yellow, style = "bold" },
