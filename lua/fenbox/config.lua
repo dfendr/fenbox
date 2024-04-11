@@ -15,10 +15,10 @@ local function opt(key, default)
 end
 
 config = {
-  background_color = opt("background_color", "medium"),
+  background_color = opt("background_color", "dark"),
   lualine_style = opt("lualine_style", "bold"),
-  comment_style = opt("comment_style", "NONE"),
-  keyword_style = opt("keyword_style", "italic"),
+  comment_style = opt("comment_style", "italic"),
+  keyword_style = opt("keyword_style", "NONE"),
   function_style = opt("function_style", "bold"),
   string_style = opt("string_style", "nocombine"),
   variable_style = opt("variable_style", "NONE"),
