@@ -364,7 +364,6 @@ function M.setup(config)
     --Alpha
     AlphaButtons = { fg = c.magenta, style = "bold" },
 
-
     --DBUI
     dbui_connection_ok = { fg = c.soft_green },
 
@@ -594,7 +593,7 @@ function M.setup(config)
     TSRainbowPink = { fg = c.pink },
 
     -- Illuminate:
-    IlluminatedWordText = { bg = c.background_light },
+    IlluminatedWordText = { bg = c.medium_gray },
     IlluminatedWordRead = { bg = c.background_light },
     IlluminatedWordWrite = { bg = c.background_light },
 
