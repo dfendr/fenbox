@@ -289,7 +289,7 @@ function M.setup(config)
     ["@markup.heading.6.markdown"] = { fg = c.bright_yellow, style = "bold" },
     ["@markup.list.unchecked.markdown"] = { fg = c.magenta },
     ["@markup.list.checked.markdown"] = { fg = c.magenta },
-    ["@markup.list.markdown"] = { fg = c.bright_yellow },
+    ["@markup.list.markdown"] = { fg = c.light_blue},
     ["@markup.strong.markdown_inline"] = { style = "bold" },
     ["@markup.italic.markdown_inline"] = { style = "italic" },
     ["@markup.orderedlist.markdown"] = { fg = c.orange },
