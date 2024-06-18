@@ -55,6 +55,6 @@ return {
 </details>
 
 ### Special Thanks
-- morhetz for [gruvboxy](https://github.com/morhetz/gruvbox)
+- morhetz for [gruvbox](https://github.com/morhetz/gruvbox)
 - luisiacc for [gruvbox-baby](https://github.com/luisiacc/gruvbox-baby)
-
+- Vincent Parizot for his implementation of [Gruvbox for Jetbrains editors](https://plugins.jetbrains.com/plugin/12310-gruvbox-theme)
