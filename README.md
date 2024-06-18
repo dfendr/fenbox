@@ -13,7 +13,6 @@
 return {
     {
         "dfendr/fenbox",
-        -- branch = "sandbox",
         lazy = false,
         priority = 1000, -- make sure to load this before all the other start plugins
         config = function()
@@ -41,7 +40,7 @@ return {
 > TODO: (add language examples)
 
 <details>
-<summary>Which-Key provides easy reminders for more complex keybinds</summary>
+<summary>Example</summary>
   <img width="700" alt="Editor showing commands, in WhichKey popup" src="https://i.imgur.com/44QPgnt.png">
 </details>
 
