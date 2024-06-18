@@ -173,7 +173,7 @@ function M.setup(config)
     ["@string.escape"] = { fg = c.pink },
     ["@structure"] = { fg = c.clean_green },
     ["@tag"] = { fg = c.clean_green },
-    ["@tag.attribute"] = { fg = c.soft_yellow },
+    ["@tag.attribute"] = { fg = c.light_blue },
     ["@tag.delimiter"] = { fg = c.comment },
     ["@text"] = { c.foreground },
     ["@text.emphasis"] = { style = "italic" },
@@ -205,6 +205,9 @@ function M.setup(config)
     ["@lsp.typemod.number.injected.rust"] = { fg = c.magenta },
 
     -- ["@keyword.modifier.rust"] = { fg = c.orange},  -- mut, pub, static
+
+    -- HTML/JSX/TSX
+
 
     -- JSON
     ["@label.json"] = { fg = c.light_blue },
