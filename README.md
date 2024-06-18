@@ -53,3 +53,8 @@ return {
 <summary>Example: LSP inspections</summary>
   <img width="700" alt="Examining the documentation for .iter() in Rust" src="https://i.imgur.com/ZK296f2.png">
 </details>
+
+### Special Thanks
+- morhetz for [gruvboxy](https://github.com/morhetz/gruvbox)
+- luisiacc for [gruvbox-baby](https://github.com/luisiacc/gruvbox-baby)
+
