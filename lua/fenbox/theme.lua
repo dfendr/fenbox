@@ -208,7 +208,6 @@ function M.setup(config)
 
     -- HTML/JSX/TSX
 
-
     -- JSON
     ["@label.json"] = { fg = c.light_blue },
 
@@ -243,6 +242,7 @@ function M.setup(config)
 
     -- Lua
     ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.orange, style = config.function_style },
+    ["@property.lua"] = { fg = c.light_blue },
 
     -- Java
 
@@ -292,7 +292,7 @@ function M.setup(config)
     ["@markup.heading.6.markdown"] = { fg = c.bright_yellow, style = "bold" },
     ["@markup.list.unchecked.markdown"] = { fg = c.magenta },
     ["@markup.list.checked.markdown"] = { fg = c.magenta },
-    ["@markup.list.markdown"] = { fg = c.light_blue},
+    ["@markup.list.markdown"] = { fg = c.light_blue },
     ["@markup.strong.markdown_inline"] = { style = "bold" },
     ["@markup.italic.markdown_inline"] = { style = "italic" },
     ["@markup.orderedlist.markdown"] = { fg = c.orange },
@@ -445,6 +445,24 @@ function M.setup(config)
     LspCodeLens = { fg = c.medium_gray, style = "italic" },
     LspInlayHint = { fg = c.comment, bg = funcs.fade_RGB(c.comment, c.background, 90), style = "italic" },
     LspCodeLensSeparator = { fg = c.medium_gray },
+
+    -- GitSigns
+
+    GitSignsAdd = { fg = c.soft_green },
+    GitSignsAddLn = { fg = c.comment },
+    GitSignsAddN = { fg = c.comment },
+    GitSignsChange = { fg = c.neutral_yellow },
+    GitSignsChangeLn = { fg = c.comment },
+    GitSignsChangeNr = { fg = c.comment },
+    GitSignsChangedelete = { fg = c.comment },
+    GitSignsChangedeleteLn = { fg = c.comment },
+    GitSignsChangedeleteNr = { fg = c.comment },
+    GitSignsDelete = { fg = c.red },
+    GitSignsDeleteLn = { fg = c.comment },
+    GitSignsDeleteNr = { fg = c.comment },
+    GitSignsTopdelete = { fg = c.red },
+    GitSignsTopdeleteLn = { fg = c.comment },
+    GitSignsTopdeleteNr = { fg = c.comment },
 
     -- mix
     GitSignsCurrentLineBlame = { fg = c.faded_green },
