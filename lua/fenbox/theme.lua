@@ -508,7 +508,7 @@ function M.setup(config)
 
     -- Cmp
     CmpDocumentation = { fg = c.foreground, bg = c.background_dark },
-    CmpDocumentationBorder = { fg = c.medium_gray, bg = c.background_dark },
+    CmpDocumentationBorder = { fg = c.medium_gray, bg = c.background },
     CmpItemAbbr = { fg = c.foreground },
     CmpItemAbbrDeprecated = { fg = c.foreground, style = "strikethrough" },
     CmpItemAbbrMatch = { fg = c.light_blue, style = "bold" },
@@ -538,6 +538,24 @@ function M.setup(config)
     CmpItemKindEnumMember = { fg = c.magenta },
     CmpItemKindOperator = { fg = c.foreground },
     CmpItemKindSnippet = { fg = c.grey },
+
+    -- Blink highlights linked to cmp equivalents
+    BlinkCmpMenu = { link = "CmpItemAbbr" },
+    BlinkCmpMenuBorder = { link = "CmpDocumentationBorder" },
+    BlinkCmpMenuSelection = { link = "CmpItemAbbrMatch" },
+    BlinkCmpScrollBarThumb = { link = "PmenuThumb" },
+    BlinkCmpScrollBarGutter = { link = "PmenuSbar" },
+    BlinkCmpLabel = { link = "CmpItemAbbr" },
+    BlinkCmpLabelDeprecated = { link = "CmpItemAbbrDeprecated" },
+    BlinkCmpLabelMatch = { link = "CmpItemAbbrMatch" }, -- unused but mapped for consistency
+    BlinkCmpGhostText = { link = "CmpItemMenu" },
+    BlinkCmpKind = { link = "CmpItemKindDefault" },
+    BlinkCmpDoc = { link = "CmpDocumentation" },
+    BlinkCmpDocBorder = { link = "CmpDocumentationBorder" },
+    BlinkCmpDocCursorLine = { link = "Visual" },
+    BlinkCmpSignatureHelp = { link = "CmpDocumentation" },
+    BlinkCmpSignatureHelpBorder = { link = "CmpDocumentationBorder" },
+    -- BlinkCmpSignatureHelpActiveParameter = { link = "LspSignatureActiveParameter" },
 
     -- DapUI/Debug UI
 
