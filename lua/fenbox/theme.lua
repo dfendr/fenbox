@@ -511,7 +511,7 @@ function M.setup(config)
     CmpDocumentationBorder = { fg = c.medium_gray, bg = c.background },
     CmpItemAbbr = { fg = c.foreground },
     CmpItemAbbrDeprecated = { fg = c.foreground, style = "strikethrough" },
-    CmpItemAbbrMatch = { fg = c.light_blue, style = "bold" },
+    CmpItemAbbrMatch = { bg = c.background_light, style = "bold" },
     CmpItemAbbrMatchFuzzy = { fg = c.light_blue },
 
     CmpItemMenu = { fg = c.comment },
