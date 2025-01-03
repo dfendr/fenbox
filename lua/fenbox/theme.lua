@@ -507,8 +507,8 @@ function M.setup(config)
     FloatBorder = { fg = c.light_blue, bg = c.background },
 
     -- Cmp
-    CmpDocumentation = { fg = c.foreground, bg = c.background_dark },
-    CmpDocumentationBorder = { fg = c.medium_gray, bg = c.background },
+    CmpDocumentation = { fg = c.foreground, bg = c.background },
+    CmpDocumentationBorder = { fg = c.light_blue, bg = c.background },
     CmpItemAbbr = { fg = c.foreground },
     CmpItemAbbrDeprecated = { fg = c.foreground, style = "strikethrough" },
     CmpItemAbbrMatch = { bg = c.background_light, style = "bold" },
@@ -548,8 +548,33 @@ function M.setup(config)
     BlinkCmpLabel = { link = "CmpItemAbbr" },
     BlinkCmpLabelDeprecated = { link = "CmpItemAbbrDeprecated" },
     BlinkCmpLabelMatch = { link = "CmpItemAbbrMatch" }, -- unused but mapped for consistency
-    BlinkCmpGhostText = { link = "CmpItemMenu" },
-    BlinkCmpKind = { link = "CmpItemKindDefault" },
+    -- BlinkCmpGhostText = { link = "CmpItemMenu" },
+
+
+    BlinkCmpKindDefault = { fg = c.dark_gray },
+    BlinkCmpKindKeyword = { fg = c.red },
+    BlinkCmpKindVariable = { fg = c.light_blue },
+    BlinkCmpKindConstant = { fg = c.magenta },
+    BlinkCmpKindReference = { fg = c.magenta },
+    BlinkCmpKindValue = { fg = c.magenta },
+    BlinkCmpKindFunction = { fg = c.soft_green },
+    BlinkCmpKindMethod = { fg = c.soft_green },
+    BlinkCmpKindConstructor = { fg = c.clean_green },
+    BlinkCmpKindClass = { fg = c.soft_yellow },
+    BlinkCmpKindInterface = { fg = c.soft_yellow },
+    BlinkCmpKindStruct = { fg = c.soft_yellow },
+    BlinkCmpKindEvent = { fg = c.pink },
+    BlinkCmpKindEnum = { fg = c.soft_yellow },
+    BlinkCmpKindUnit = { fg = c.pink },
+    BlinkCmpKindModule = { fg = c.blue_gray },
+    BlinkCmpKindProperty = { fg = c.light_blue },
+    BlinkCmpKindField = { fg = c.light_blue },
+    BlinkCmpKindTypeParameter = { fg = c.light_blue },
+    BlinkCmpKindEnumMember = { fg = c.magenta },
+    BlinkCmpKindOperator = { fg = c.foreground },
+    BlinkCmpKindSnippet = { fg = c.grey },
+
+
     BlinkCmpDoc = { link = "CmpDocumentation" },
     BlinkCmpDocBorder = { link = "CmpDocumentationBorder" },
     BlinkCmpDocCursorLine = { link = "Visual" },
