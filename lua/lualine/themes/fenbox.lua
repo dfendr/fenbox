@@ -31,38 +31,39 @@ return {
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.n, c.background, 90) },
     c = {
       fg = mode_color.text, --[[ bg = funcs.fade_RGB(n_color, background, 95) ]]
+      bg = c.background,
     },
   },
   insert = {
     a = { fg = c.background, bg = mode_color.i, gui = "bold" },
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.i, c.background, 90) },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
   visual = {
     a = { fg = c.background, bg = mode_color.v, gui = "bold" },
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.v, c.background, 90) },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
 
   visual_block = {
     a = { fg = c.background, bg = mode_color.v, gui = "bold" },
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.v, c.background, 90) },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
   replace = {
     a = { fg = c.background, bg = mode_color.r, gui = "bold" },
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.r, c.background, 90) },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
 
   inactive = {
     a = { fg = c.milk, bg = c.background },
     b = { fg = mode_color.text },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
   command = {
     a = { fg = c.background, bg = mode_color.c, gui = "bold" },
     b = { fg = mode_color.text, bg = funcs.fade_RGB(mode_color.c, c.background, 90) },
-    c = { fg = mode_color.text },
+    c = { fg = mode_color.text, bg = c.background },
   },
 }
