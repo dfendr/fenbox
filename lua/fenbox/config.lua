@@ -4,14 +4,11 @@ local config
 vim = vim or { g = {}, o = {} }
 
 local function opt(key, default)
-  key = "fenbox_" .. key
-  if vim.g[key] == nil then
+  local value = vim.g["fenbox_" .. key]
+  if value == nil then
     return default
   end
-  if vim.g[key] == 0 then
-    return false
-  end
-  return vim.g[key]
+  return value
 end
 
 config = {

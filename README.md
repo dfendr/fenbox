@@ -16,7 +16,7 @@ return {
         lazy = false,
         priority = 1000, -- make sure to load this before all the other start plugins
         config = function()
-            vim.o.termguicolors = false
+            vim.o.termguicolors = true
             vim.g.fenbox_background_color = "dark"
             vim.g.fenbox_telescope_theme = false
             vim.g.fenbox_transparent_mode = false
