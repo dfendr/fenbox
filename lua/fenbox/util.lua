@@ -1,10 +1,6 @@
 local hsluv = require("fenbox.hsluv")
-local theme_util = require("fenbox.theme")
 
 local util = {}
-
-util.colorsUsed = {}
-util.colorCache = {}
 
 util.bg = "#000000"
 util.fg = "#ffffff"
@@ -86,18 +82,8 @@ end
 ------------------------------------------------
 
 function util.highlight(group, color)
-  if color.fg then
-    util.colorsUsed[color.fg] = true
-  end
-  if color.bg then
-    util.colorsUsed[color.bg] = true
-  end
-  if color.sp then
-    util.colorsUsed[color.sp] = true
-  end
-
   if color.link then
-    vim.cmd("highlight! link " .. group .. " " .. color.link)
+    vim.api.nvim_set_hl(0, group, { link = color.link })
   else
     local data = {}
     if color.fg then
@@ -120,7 +106,6 @@ function util.highlight(group, color)
       end
     end
     vim.api.nvim_set_hl(0, group, data)
-    -- vim.cmd(hl)
   end
 end
 
@@ -133,17 +118,13 @@ end
 function util.load(theme)
   -- only needed to clear when not the default colorscheme
   if vim.g.colors_name then
-    vim.cmd("hi clear")
+    vim.cmd.highlight("clear")
   end
 
   vim.o.termguicolors = true
   vim.g.colors_name = "fenbox"
   -- load base theme
   util.syntax(theme.base)
-
-  vim.defer_fn(function()
-    util.syntax(theme.defer)
-  end, 100)
 end
 
 return util
