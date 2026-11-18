@@ -35,6 +35,11 @@ return {
     },
 ```
 
+### Light mode
+
+Set `vim.o.background = "light"` before `colorscheme fenbox`. The light
+palette is gruvbox light. `fenbox_background_color` applies to dark only.
+
 ## 🌟 Showcase
 
 > TODO: (add language examples)
