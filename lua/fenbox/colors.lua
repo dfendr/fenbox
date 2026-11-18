@@ -34,6 +34,9 @@ local palette = {
   orange = "#fe8019",
   soft_green = "#b8bb26",
   soft_yellow = "#fabd2f",
+
+  indent = "#414141",
+  indent_scope = "#505050",
 }
 
 -- these are backgrounds
@@ -44,6 +47,50 @@ palette.diff = {
   text = "#314753",
 }
 M.p = palette
+
+-- gruvbox light; matches Noctalia fenbox light
+local light_palette = vim.tbl_extend("force", palette, {
+  background = "#fbf1c7",
+  background_dark = "#f2e5bc",
+  background_light = "#ebdbb2",
+  blue_gray = "#458588",
+  bright_yellow = "#b57614",
+  clean_green = "#427b58",
+  dark = "#ebdbb2",
+  dark0 = "#fbf1c7",
+  dark1 = "#ebdbb2",
+  dark2 = "#d5c4a1",
+  dark_gray = "#076678",
+  error_red = "#cc241d",
+  faded_green = "#98971a",
+  faded_yellow = "#b57614",
+  grey = "#665c54",
+  medium_gray = "#d5c4a1",
+  milk = "#504945",
+  neutral_yellow = "#d79921",
+  pink = "#8f3f71",
+  red = "#9d0006",
+
+  comment = "#928374",
+  foreground = "#3c3836",
+  forest_green = "#79740e",
+  gray = "#928374",
+  light_blue = "#076678",
+  magenta = "#b16286",
+  orange = "#af3a03",
+  soft_green = "#79740e",
+  soft_yellow = "#b57614",
+
+  indent = "#ebdbb2",
+  indent_scope = "#d5c4a1",
+})
+
+light_palette.diff = {
+  add = "#e1e6b9",
+  change = "#d8e3d6",
+  delete = "#f3cfb8",
+  text = "#bfd5cd",
+}
 
 local gruvboxbaby_palette = vim.tbl_extend("force", palette, {
   comment = "#665c54",
@@ -58,8 +105,11 @@ local gruvboxbaby_palette = vim.tbl_extend("force", palette, {
 
 function M.config(config)
   config = config or require("fenbox.config")
+  local is_light = vim.o.background == "light"
   local colors
-  if config.use_gruvboxbaby_palette then
+  if is_light then
+    colors = light_palette
+  elseif config.use_gruvboxbaby_palette then
     colors = gruvboxbaby_palette
   else
     colors = palette
@@ -88,7 +138,8 @@ function M.config(config)
   }
 
   local background = config.background_color or colors.background
-  if intensity_map[background] then
+  -- intensity maps darken; light keeps Noctalia surfaces
+  if intensity_map[background] and not is_light then
     colors = vim.tbl_extend("force", colors, intensity_map[background])
   end
 
