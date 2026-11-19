@@ -690,19 +690,6 @@ function M.setup(config)
     -- Headline.nvim
     Headline = { bg = c.dark1 },
 
-    -- Bufferline
-    BufferLineIndicatorSelected = { fg = c.foreground },
-    BufferLineFill = { fg = c.dark1 }, -- e.g. transparent
-    BufferLineBackground = { fg = c.comment, bg = c.background_dark },
-    BufferLineTabSelected = { fg = c.foreground, bg = c.background },
-    BufferLineBufferSelected = { fg = c.foreground },
-    BufferLineBufferVisible = { fg = c.comment, bg = c.background },
-    BufferLineBuffer = { fg = c.comment, bg = c.background },
-    BufferLineModfied = { fg = c.comment, bg = c.background },
-    BufferLineModifiedSelected = { fg = c.foreground, bg = c.background_dark },
-    BufferLineModifiedVisible = { fg = c.comment, bg = c.background },
-    BufferLineSeparator = { fg = c.background_light, bg = c.background_dark },
-
     -- Diagnostics (modern)
     DiagnosticHint = { fg = c.light_blue },
     DiagnosticUnnecessary = { fg = c.comment, style = "italic" },
